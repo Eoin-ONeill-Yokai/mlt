@@ -75,6 +75,7 @@ PushConsumer::PushConsumer( Profile& profile, const char *id , const char *servi
 
 PushConsumer::~PushConsumer( )
 {
+	delete m_private;
 }
 
 void PushConsumer::set_render( int width, int height, double aspect_ratio )
